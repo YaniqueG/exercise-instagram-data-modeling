@@ -19,7 +19,6 @@ class User(Base):
 class Post(Base):
     __tablename__ = "Post"
     id = Column(Integer,ForeignKey('Comment.post_id'),primary_key=True)
-    user_id =Column(Integer,ForeignKey('User.id'))
 
 class Media(Base):
     __tablename__ = 'Media'
